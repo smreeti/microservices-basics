@@ -1,13 +1,13 @@
-package com.smriti.ratingsdataservice;
+package com.smriti.MovieInfoService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RatingsDataServiceApplication {
+public class MovieInfoServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RatingsDataServiceApplication.class, args);
+		SpringApplication.run(MovieInfoServiceApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.smriti.ratingsdataservice;
+package com.smriti.RatingsDataService;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

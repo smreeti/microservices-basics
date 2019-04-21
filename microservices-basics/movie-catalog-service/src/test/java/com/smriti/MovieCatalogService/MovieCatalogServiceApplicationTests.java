@@ -1,4 +1,4 @@
-package com.smriti.moviecatalogservice;
+package com.smriti.MovieCatalogService;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
