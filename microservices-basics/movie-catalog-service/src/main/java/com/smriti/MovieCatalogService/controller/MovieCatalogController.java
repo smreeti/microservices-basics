@@ -22,12 +22,12 @@ public class MovieCatalogController {
     @RequestMapping("/{userId}")
     private List<MovieCatalog> getMovieList(@PathVariable("userId") Long userId) {
 
-        UserRating ratingData = restTemplate.getForObject("http://localhost:8083/ratings-data/users/" + userId,
+        UserRating ratingData = restTemplate.getForObject("http://ratings-data-service/ratings-data/users/" + userId,
                 UserRating.class);
 
        return ratingData.getRatingData().stream().map(ratings -> {
 
-                    Movie movie = restTemplate.getForObject("http://localhost:8082/movie-info/" + ratings.getMovieId(),
+                    Movie movie = restTemplate.getForObject("http://movie-info-service/movie-info/" + ratings.getMovieId(),
                             Movie.class);
 
                     return new MovieCatalog(movie.getName(),"test", ratings.getRating());
